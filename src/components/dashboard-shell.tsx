@@ -309,7 +309,7 @@ export default function DashboardShell({
               <span className="sr-only">Open sidebar</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
-            <span>Payments</span>
+            <span className="text-md font-regular text-gray-900">Payments</span>
 
             {/* Separator */}
             <div className="h-6 w-px bg-gray-900/10" aria-hidden="true" />
