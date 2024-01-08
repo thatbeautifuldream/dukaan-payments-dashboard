@@ -22,6 +22,7 @@ import {
   WrenchScrewdriverIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import Link from "next/link";
 import { Fragment, useState } from "react";
 
 const navigation = [
@@ -347,6 +348,16 @@ export default function DashboardShell({
 
           <main className="py-10">
             <div className="px-4 sm:px-6 lg:px-8 gap-6">{children}</div>
+            <span className="block text-center text-sm text-gray-500 mt-5">
+              Made by{" "}
+              <Link
+                target="_blank"
+                href="https://milindmishra.com"
+                className="underline"
+              >
+                Milind Mishra
+              </Link>
+            </span>
           </main>
         </div>
       </div>
