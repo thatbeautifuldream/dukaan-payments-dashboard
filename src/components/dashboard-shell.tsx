@@ -2,6 +2,7 @@
 
 import { Dialog, Menu, Transition } from "@headlessui/react";
 import {
+  CheckCircleIcon,
   ChevronDownIcon,
   MagnifyingGlassIcon,
   PlusIcon,
@@ -308,13 +309,10 @@ export default function DashboardShell({
               <span className="sr-only">Open sidebar</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
+            <span>Payments</span>
 
             {/* Separator */}
-            <div
-              className="h-6 w-px bg-gray-900/10 lg:hidden"
-              aria-hidden="true"
-            />
-
+            <div className="h-6 w-px bg-gray-900/10" aria-hidden="true" />
             <div className="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
               <form className="relative flex flex-1" action="#" method="GET">
                 <label htmlFor="search-field" className="sr-only">
