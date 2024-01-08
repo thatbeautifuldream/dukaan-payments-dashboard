@@ -4,6 +4,7 @@ import { Dialog, Menu, Transition } from "@headlessui/react";
 import {
   ChevronDownIcon,
   MagnifyingGlassIcon,
+  PlusIcon,
 } from "@heroicons/react/20/solid";
 import {
   BanknotesIcon,
@@ -11,6 +12,7 @@ import {
   BoltIcon,
   ChartBarIcon,
   ChatBubbleBottomCenterIcon,
+  ChatBubbleLeftEllipsisIcon,
   HomeIcon,
   PresentationChartBarIcon,
   ReceiptPercentIcon,
@@ -77,14 +79,14 @@ function AvailableCredits() {
         </svg>
 
         <div className="flex flex-col">
-          <span className="text-sm leading-6 text-gray-300" aria-hidden="true">
+          <span className="text-xs leading-6 text-gray-300" aria-hidden="true">
             Available Credits
           </span>
           <span
             className="text-xl font-semibold leading-6 text-gray-200"
             aria-hidden="true"
           >
-            300.0
+            222.10
           </span>
         </div>
       </a>
@@ -330,18 +332,22 @@ export default function DashboardShell({
                   name="search"
                 />
               </form>
-              <div className="flex items-center gap-x-4 lg:gap-x-6">
+              <div className="flex items-center gap-x-2 lg:gap-x-3">
                 <button
                   type="button"
-                  className="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500"
+                  className="rounded-full bg-gray-500 p-1.5 text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
                 >
-                  <span className="sr-only">Action</span>
-                  <ChatBubbleBottomCenterIcon
-                    className="h-6 w-6"
+                  <ChatBubbleLeftEllipsisIcon
+                    className="h-5 w-5"
                     aria-hidden="true"
                   />
                 </button>
-                <ChevronDownIcon className="h-6 w-6" aria-hidden="true" />
+                <button
+                  type="button"
+                  className="rounded-full bg-gray-500 p-1.5 text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
+                >
+                  <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
+                </button>
               </div>
             </div>
           </div>
