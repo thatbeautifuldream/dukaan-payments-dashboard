@@ -12,7 +12,7 @@ export default function TransactionsTable() {
     <div className="mt-5">
       <div className="sm:flex sm:items-center">
         <div className="sm:flex-auto">
-          <h1 className="text-base font-semibold leading-6 text-gray-900">
+          <h1 className="text-base font-regular leading-6 text-gray-900">
             Transactions | This Month
           </h1>
         </div>
@@ -46,7 +46,7 @@ export default function TransactionsTable() {
                   <tr>
                     <th
                       scope="col"
-                      className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"
+                      className="py-3.5 pl-4 pr-3 text-left text-sm font-normal text-gray-900 sm:pl-0"
                     >
                       <a href="#" className="group inline-flex">
                         Order ID
@@ -54,7 +54,7 @@ export default function TransactionsTable() {
                     </th>
                     <th
                       scope="col"
-                      className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                      className="px-3 py-3.5 text-left text-sm font-normal text-gray-900"
                     >
                       <a href="#" className="group inline-flex">
                         Order Date
@@ -68,7 +68,7 @@ export default function TransactionsTable() {
                     </th>
                     <th
                       scope="col"
-                      className="px-3 py-3.5 text-right text-sm font-semibold text-gray-900"
+                      className="px-3 py-3.5 text-right text-sm font-normal text-gray-900"
                     >
                       <a href="#" className="group inline-flex">
                         Order Amount
@@ -76,7 +76,7 @@ export default function TransactionsTable() {
                     </th>
                     <th
                       scope="col"
-                      className="px-3 py-3.5 text-right text-sm font-semibold text-gray-900"
+                      className="px-3 py-3.5 text-right text-sm font-normal text-gray-900"
                     >
                       <a href="#" className="group inline-flex">
                         Transaction Fees

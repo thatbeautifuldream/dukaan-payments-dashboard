@@ -2,17 +2,14 @@
 
 import { Dialog, Menu, Transition } from "@headlessui/react";
 import {
-  CheckCircleIcon,
   ChevronDownIcon,
   MagnifyingGlassIcon,
-  PlusIcon,
 } from "@heroicons/react/20/solid";
 import {
   BanknotesIcon,
   Bars3Icon,
   BoltIcon,
   ChartBarIcon,
-  ChatBubbleBottomCenterIcon,
   ChatBubbleLeftEllipsisIcon,
   HomeIcon,
   PresentationChartBarIcon,
