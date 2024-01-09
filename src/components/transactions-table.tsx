@@ -73,12 +73,12 @@ export default function TransactionsTable() {
                 </div>
               </div>
 
-              <table className="min-w-full divide-y divide-gray-300">
+              <table className="min-w-full divide-y divide-gray-300 mt-5">
                 <thead>
                   <tr>
                     <th
                       scope="col"
-                      className="py-3.5 pl-4 pr-3 text-left text-sm font-normal text-gray-900 sm:pl-0"
+                      className="py-3.5 pl-4 ml-4 pr-3 text-left text-sm font-normal text-gray-900 sm:pl-0 "
                     >
                       <a href="#" className="group inline-flex">
                         Order ID
