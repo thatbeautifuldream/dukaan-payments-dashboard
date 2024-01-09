@@ -21,6 +21,7 @@ import {
   UsersIcon,
   WrenchScrewdriverIcon,
   XMarkIcon,
+  InformationCircleIcon,
 } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { Fragment, useState } from "react";
@@ -310,6 +311,13 @@ export default function DashboardShell({
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
             <span className="text-md font-regular text-gray-900">Payments</span>
+            <span className="flex items-center text-xs font-regular text-gray-500">
+              <InformationCircleIcon
+                className="h-4 w-4 mr-1"
+                aria-hidden="true"
+              />
+              <span className="hidden lg:inline">How it works</span>
+            </span>
 
             {/* Separator */}
             <div className="h-6 w-px bg-gray-900/10" aria-hidden="true" />
