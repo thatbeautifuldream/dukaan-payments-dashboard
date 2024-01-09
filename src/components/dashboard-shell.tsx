@@ -60,7 +60,7 @@ function AvailableCredits() {
     <li className="mt-auto">
       <a
         href="#"
-        className="group -mx-2 flex items-center gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 bg-gray-800 text-white"
+        className="group -mx-2 flex items-center gap-x-3 rounded-md p-2 text-sm font-normal leading-6 bg-gray-800 text-white"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ function ProfileDropdown() {
         </span>
         <span className="flex flex-col ml-4">
           <span
-            className="text-sm font-semibold leading-6 text-gray-200"
+            className="text-sm font-normal leading-6 text-gray-200"
             aria-hidden="true"
           >
             Nishyan
@@ -233,7 +233,7 @@ export default function DashboardShell({
                                     item.current
                                       ? "bg-gray-800 text-white"
                                       : "text-gray-400 hover:text-white hover:bg-gray-800",
-                                    "group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                                    "group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-normal"
                                   )}
                                 >
                                   <item.icon
@@ -281,7 +281,7 @@ export default function DashboardShell({
                             item.current
                               ? "bg-gray-800 text-white"
                               : "text-gray-400 hover:text-white hover:bg-gray-800",
-                            "group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
+                            "group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-normal"
                           )}
                         >
                           <item.icon
