@@ -263,7 +263,7 @@ export default function DashboardShell({
             <div className="flex h-16 shrink-0 items-center">
               {/* <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                src="https://tailwindui.com/img/logos/mark.svg?color=gray&shade=500"
                 alt="Your Company"
               /> */}
               {/* Profile dropdown */}
@@ -319,42 +319,50 @@ export default function DashboardShell({
               <span className="hidden lg:inline">How it works</span>
             </span>
 
-            {/* Separator */}
-            <div className="h-6 w-px bg-gray-900/10" aria-hidden="true" />
-            <div className="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
-              <form className="relative flex flex-1" action="#" method="GET">
-                <label htmlFor="search-field" className="sr-only">
-                  Search features, tutorials, etc.
+            {/* Search */}
+            <div className="flex justify-center items-center flex-1">
+              <form
+                className="relative flex items-center"
+                action="#"
+                method="GET"
+              >
+                <label htmlFor="search" className="sr-only">
+                  Search
                 </label>
-                <MagnifyingGlassIcon
-                  className="pointer-events-none absolute inset-y-0 left-0 h-full w-5 text-gray-400"
+                <div className="relative">
+                  <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <MagnifyingGlassIcon
+                      className="h-5 w-5 text-gray-400"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <input
+                    id="search"
+                    name="search"
+                    className="block w-full max-w-md rounded-md border-0 bg-gray-100 py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm sm:leading-6"
+                    placeholder="Search features, tutorials, etc."
+                    type="search"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <div className="flex items-center gap-x-2">
+              <button
+                type="button"
+                className="rounded-full bg-gray-500 p-1.5 text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
+              >
+                <ChatBubbleLeftEllipsisIcon
+                  className="h-5 w-5"
                   aria-hidden="true"
                 />
-                <input
-                  id="search-field"
-                  className="block h-full w-full border-0 py-0 pl-8 pr-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
-                  placeholder="Search features, tutorials, etc."
-                  type="search"
-                  name="search"
-                />
-              </form>
-              <div className="flex items-center gap-x-2 lg:gap-x-3">
-                <button
-                  type="button"
-                  className="rounded-full bg-gray-500 p-1.5 text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
-                >
-                  <ChatBubbleLeftEllipsisIcon
-                    className="h-5 w-5"
-                    aria-hidden="true"
-                  />
-                </button>
-                <button
-                  type="button"
-                  className="rounded-full bg-gray-500 p-1.5 text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
-                >
-                  <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
-                </button>
-              </div>
+              </button>
+              <button
+                type="button"
+                className="rounded-full bg-gray-500 p-1.5 text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
+              >
+                <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
+              </button>
             </div>
           </div>
 
