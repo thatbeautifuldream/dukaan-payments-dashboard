@@ -77,11 +77,14 @@ function AvailableCredits() {
         </svg>
 
         <div className="flex flex-col">
-          <span className="text-xs leading-6 text-gray-300" aria-hidden="true">
+          <span
+            className="text-xs font-normal leading-6 text-gray-300"
+            aria-hidden="true"
+          >
             Available Credits
           </span>
           <span
-            className="text-xl font-semibold leading-6 text-gray-200"
+            className="text-xl font-normal leading-6 text-gray-200"
             aria-hidden="true"
           >
             222.10
