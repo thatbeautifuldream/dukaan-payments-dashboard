@@ -1,16 +1,13 @@
 import Card from "@/components/ui/card";
 import Pagination from "@/components/ui/pagination";
+import { transactions } from "@/data/transactions";
 import {
+  ArrowDownTrayIcon,
+  ArrowsUpDownIcon,
   ChevronDownIcon,
   InformationCircleIcon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/20/solid";
-import {
-  BookmarkIcon,
-  ArrowsUpDownIcon,
-  ArrowDownTrayIcon,
-} from "@heroicons/react/20/solid";
-import { transactions } from "@/data/transactions";
 
 function TransactionButtonGroup() {
   return (
