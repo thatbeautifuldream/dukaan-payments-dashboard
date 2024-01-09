@@ -310,13 +310,17 @@ export default function DashboardShell({
               <span className="sr-only">Open sidebar</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
-            <span className="text-md font-regular text-gray-900">Payments</span>
-            <span className="flex items-center text-xs font-regular text-gray-500">
+            <span className="hidden lg:flex text-md font-regular text-gray-900">
+              Payments
+            </span>
+
+            {/* Hide in mobile layout, display in larger screens */}
+            <span className="hidden lg:flex items-center text-xs font-regular text-gray-500">
               <InformationCircleIcon
                 className="h-4 w-4 mr-1"
                 aria-hidden="true"
               />
-              <span className="hidden lg:inline">How it works</span>
+              <span className="lg:inline">How it works</span>
             </span>
 
             {/* Search */}
